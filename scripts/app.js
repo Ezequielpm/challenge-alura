@@ -75,9 +75,9 @@ function mostrarMensajeTextoCopiado() {
 
 function desencriptarTexto() {
     let texto = document.getElementById('texto-ingresado').value;
-    // if (!verificarTexto()) {
-    //     return;
-    // }
+    if (!verificarTexto()) {
+        return;
+    }
     textoDesencriptado = texto
         .replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
@@ -89,6 +89,9 @@ function desencriptarTexto() {
     ocultarElemento('mensaje-no-encontrado');
     ocultarElemento('resalte');
     mostrarElemento('mensaje-texto-desencriptado');
+    document.getElementById('contenedor-texto-encriptado').style.width = '90%';
+    document.getElementById('contenedor-texto-encriptado').style.height = '95%';
+    mostrarElemento('boton-copiar');
     document.getElementById('texto-encriptado').textContent = textoDesencriptado;
     mostrarElemento('texto-encriptado');
     setTimeout(function () {

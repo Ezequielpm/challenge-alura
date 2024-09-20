@@ -344,4 +344,5 @@
 #boton-encriptar:hover,
 #boton-desencriptar:hover,#boton-limpiar:hover {
     background-color: #9ea3a8;
+    cursor: pointer;
 }
