@@ -84,9 +84,13 @@ function desencriptarTexto() {
         .replace(/ai/g, 'a')
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
-    document.getElementById('texto-encriptado').textContent = textoDesencriptado;
-    mostrarElemento('mensaje-texto-desencriptado');
     ocultarElemento('mensaje-texto-encriptado');
+    ocultarElemento('munieco');
+    ocultarElemento('mensaje-no-encontrado');
+    ocultarElemento('resalte');
+    mostrarElemento('mensaje-texto-desencriptado');
+    document.getElementById('texto-encriptado').textContent = textoDesencriptado;
+    mostrarElemento('texto-encriptado');
     setTimeout(function () {
         ocultarElemento('mensaje-texto-desencriptado');
     }, 3000);
