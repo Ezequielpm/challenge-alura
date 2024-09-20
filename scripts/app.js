@@ -75,9 +75,9 @@ function mostrarMensajeTextoCopiado() {
 
 function desencriptarTexto() {
     let texto = document.getElementById('texto-ingresado').value;
-    if (!verificarTexto()) {
-        return;
-    }
+    // if (!verificarTexto()) {
+    //     return;
+    // }
     textoDesencriptado = texto
         .replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
