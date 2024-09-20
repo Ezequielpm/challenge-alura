@@ -314,7 +314,7 @@
 
 
 
-.botones #boton-encriptar {
+.botones #boton-encriptar,#boton-limpiar {
     background-color: darkblue;
     color: white;
     border-radius: 2.4rem;
@@ -342,6 +342,6 @@
 }
 
 #boton-encriptar:hover,
-#boton-desencriptar:hover {
+#boton-desencriptar:hover,#boton-limpiar:hover {
     background-color: #9ea3a8;
 }

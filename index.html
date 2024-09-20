@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Encriptador/Desencriptador de texto</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="contenedor-general">
-        <div class="contenedor-general__lado-izquierdo">
-            <div class="mensajes-advertencia">
-                <p id="mensaje-incorrecto">No se aceptan letras mayúsculas ni con acentos.</p> <br>
-                <p id="mensaje-texto-encriptado">Texto encriptado correctamente.</p>
-                <p id="mensaje-vacio">No se encontró ningún texto.</p>
-                <p id="mensaje-texto-desencriptado">Texto desencriptado correctamente.</p>
-            </div>
-            <textarea id="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea>
-            <p id="mensaje-advertencia"><img src="assets/bi_exclamation-circle-fill.png" alt="signo de exclamación">Solo
-                letras minúsculas y sin acentos</p>
-            <div class="botones">
-                <button id="boton-encriptar" onclick="encriptarTexto();">Encriptar</button>
-                <button id="boton-desencriptar" onclick="desencriptarTexto();" disabled>Desencriptar</button>
-            </div>
+      <div class="contenedor-general__lado-izquierdo">
+        <div class="mensajes-advertencia">
+          <p id="mensaje-incorrecto">
+            No se aceptan letras mayúsculas ni con acentos.
+          </p>
+          <br />
+          <p id="mensaje-texto-encriptado">Texto encriptado correctamente.</p>
+          <p id="mensaje-vacio">No se encontró ningún texto.</p>
+          <p id="mensaje-texto-desencriptado">
+            Texto desencriptado correctamente.
+          </p>
         </div>
-        <div class="contenedor-general__lado-derecho">
-            <div class="contenedor-items-derecha">
-                <div id="contenedor-texto-encriptado">
-                    <textarea name="" id="texto-encriptado" readonly></textarea>
-                    <p id="texto-copiado">Texto copiado en el portapapeles</p>
-                    <button id="boton-copiar" onclick="copiarTexto();">Copiar</button>
-                </div>
-                <img src="assets/Muñeco_mensaje.png" alt="Persona con lupa en la mano buscando algo" id="munieco">
-                <p id="mensaje-no-encontrado"><span id="resalte">Ningún mensaje fue encontrado</span>
-                    <br>Ingresa el texto que desees encriptar o desencriptar.
-                </p>
-            </div>
-
+        <textarea
+          id="texto-ingresado"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <p id="mensaje-advertencia">
+          <img
+            src="assets/bi_exclamation-circle-fill.png"
+            alt="signo de exclamación"
+          />Solo letras minúsculas y sin acentos
+        </p>
+        <div class="botones">
+          <button id="boton-encriptar" onclick="encriptarTexto();">
+            Encriptar
+          </button>
+          <button
+            id="boton-desencriptar"
+            onclick="desencriptarTexto();"
+            disabled
+          >
+            Desencriptar
+          </button>
+          <button id="boton-limpiar" onclick="limpiar();">Limpiar</button>
         </div>
-
+      </div>
+      <div class="contenedor-general__lado-derecho">
+        <div class="contenedor-items-derecha">
+          <div id="contenedor-texto-encriptado">
+            <textarea name="" id="texto-encriptado" readonly></textarea>
+            <p id="texto-copiado">Texto copiado en el portapapeles</p>
+            <button id="boton-copiar" onclick="copiarTexto();">Copiar</button>
+          </div>
+          <img
+            src="assets/Muñeco_mensaje.png"
+            alt="Persona con lupa en la mano buscando algo"
+            id="munieco"
+          />
+          <p id="mensaje-no-encontrado">
+            <span id="resalte">Ningún mensaje fue encontrado</span>
+            <br />Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </div>
     </div>
 
     <section class="footer">
-        <p id="desarrollador">Desarrollado por <span id="autor">Ezequiel Peña Mazariegos</span> <span
-                id="desarrollador-resalte">para Alura Latam</span></p>
+      <p id="desarrollador">
+        Desarrollado por <span id="autor">Ezequiel Peña Mazariegos</span>
+        <span id="desarrollador-resalte">para Alura Latam</span>
+      </p>
     </section>
     <script src="scripts/app.js"></script>
-</body>
-
+  </body>
 </html>

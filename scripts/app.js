@@ -92,3 +92,7 @@ function desencriptarTexto() {
     }, 3000);
 }
 
+function limpiar(){
+    var campotexto = document.getElementById("texto-ingresado");
+    campotexto.value="";
+}
